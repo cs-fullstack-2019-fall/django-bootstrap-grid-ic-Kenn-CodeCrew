@@ -6,4 +6,5 @@ def index(request):
     return HttpResponse("Wrong URL")
 
 def login(request):
-    return render(request,'loginApp/index.html')
+    nameArray = ["Kenn", "Kevin", "Erin", "Thomas"]
+    return render(request,'loginApp/index.html', {"names": nameArray})
