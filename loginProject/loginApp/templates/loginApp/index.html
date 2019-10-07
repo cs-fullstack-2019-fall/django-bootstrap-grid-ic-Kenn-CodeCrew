@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
-
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'loginApp/css/index.css' %}">
 </head>
 <body>
 <h1>Test</h1>
+{% comment %}
 {% for eachName in names %}
 <h3>{{ eachName }}</h3>
 {% endfor %}
-
-{% load static %}
-<link rel="stylesheet" href="{% static 'loginApp/css/index.css' %}">
-<script src="{% static 'loginApp/js/index.js' %}"></script>
-<img src="{% static 'loginApp/images/download.png' %}" alt="">
+{% endcomment %}
+<section>
+    <h3 id="teacher1">Kenn</h3>
+    <h3 id="teacher2">Kevin</h3>
+    <h3 id="teacher3">Erin</h3>
+</section>
+{# <script src="{% static 'loginApp/js/index.js' %}"></script> #}
+{# <img src="{% static 'loginApp/images/download.png' %}" alt=""> #}
 
 </body>
 </html>
